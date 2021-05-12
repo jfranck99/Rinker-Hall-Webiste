@@ -1,0 +1,484 @@
+/* Jonathan Franck 11/12/2018 */
+
+/* Sets the color of the outerwrapper */
+#outerwrapper{
+	background : #c1d8ef;
+}
+
+/* Styles padding for header element */
+header{
+	padding-top : 10px;
+}
+
+/* Sets the style and size of header-text */
+.header-text{
+	font-family : Futura, Calibri, sans-serif;
+	font-size : 2em;
+	border : none;
+	border-radius : 1em;
+	box-shadow : 0em 0.35em 0.5em #f05028;
+}
+
+/* Changes the color and background of the nav links */
+nav ul li a{
+	color : black;
+	text-decoration : none;
+}
+
+/* Styles the footer text alignment and size */
+footer{
+	text-align : center;
+	font-size : 0.9em;
+}
+
+/* Style to create a fluid image */
+figure img{
+	max-width : 100%;
+	padding-left : 1em;
+}
+
+/* Style for socialMedia div */
+#socialMedia{
+	width : 20%;
+	padding-left : 40%;
+}
+
+/* Styles the socialMedia logos */
+#socialMedia img{
+	width : 20%;
+	padding : 0.3em;
+}
+
+/* Styles for Mobile Layout */
+
+/* Style for the container centers the page and specifies the width */
+#outerwrapper {
+	width : 100%;
+	margin-left : auto;
+	margin-right : auto;
+}
+
+/* Style for the header specifies top margin, rounded corners, and center align content */
+header {
+	font-size : 2em;
+	margin-top : 0.2em;
+	border-radius : 0.5em;
+	text-align : center;
+}
+
+/* Style for nav clears float and specifies text properties */
+nav {
+	font-size : 1em;
+	font-weight : bold;
+	text-align : center;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation*/
+nav li{
+	background-color : silver;
+	border-radius : 1em;
+	list-style-type : none;
+	margin : 0.3em;
+	margin-left : -2.2em;
+	padding-top : 0.7em;
+	padding-bottom : 0.7em;
+}
+/* Sytle changes navigation link text color to white and removes the underline */
+nav li a{
+	color : #FFFFFF;
+	text-decoration : none;
+}
+
+/* Style for the main specifies a block display, text size, margins, padding, rounded corners, and borders  */
+main{
+	display : block;
+	font-size : 1em;
+	padding: 0.5em;
+	border-top: solid 0.2em silver; 
+	border-bottom: solid 0.2em silver;
+}
+
+/* Creates a box with a border around the main content */
+section{
+	clear : both;
+	background-color : 	#FFFFFF;
+	padding : 3%;
+	border : 0.125em black solid;
+	border-radius: 1.6em;
+}
+
+article{
+	padding-right : 1em;
+	padding-left : 1em;
+}
+
+/* Centers the content of the audio element and adds padding */
+.audio{
+	text-align : center;
+	padding : 1em;
+}
+
+/* Styles the audio element to be fluid */
+Audio{
+	height : auto;
+	max-width : 100%;
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+/* Style displays the mobile class */
+.mobile{
+	display : inline;
+}
+
+/* Hides the desktop class */
+.desktop{
+	display : none;
+}
+
+/* Style for input and select elements of the form */
+input, select{
+	display : block;
+	margin-bottom : 1em;
+}
+
+/* Style for label elements of the form */
+label{
+	display : block;
+}
+
+/* MEDIA QUERRIES */
+
+/* Tablets */
+@media screen and (min-width : 481px){
+
+	/* Styles the content of the mobile class as hidden */
+	.mobile{
+		display : none;
+	}
+	
+	/* Styles the content of the desktop class to be displayed */
+	.desktop{
+		display : inline;
+	}
+	
+	/* Re-sizes image for smaller display and floats it to the left*/
+	figure img{
+		width : 25%;
+		float : left;
+	}
+	
+	/* Re-styles the Header Text to appear next to the image*/
+	.header-text{
+		margin-top : -0.5em;
+		margin-bottom : 1em;
+		margin-right : 10%;
+		margin-left : 35%;
+		font-size : 1.5em;
+		box-shadow : 0.25em 0.5em 0.75em #f05028;
+	}
+	
+	/* Styles header font size and give it a bottom margin */
+	header p{
+		margin-bottom : 3em;
+		font-size : 1em;
+	}	
+	
+	/* Styles the nav links to display horizontally and evenly spaced across the whole screen */
+	nav li{
+		display : inline;
+		float : left;
+		margin-left : 1%;
+		margin-right : 1%;
+		padding-left : 0;
+		padding-right : 0;
+		width : 23%;
+	}
+	
+	/* Styles the main content to display below the nav element */
+	main{
+		clear : left;
+		margin-top : 12em;
+	}
+	
+	/* Styles the Rinker Hall image to fit the display */
+	.RinkerHall{
+		width : 95%;
+		margin-top : -2em;
+	}
+	
+	/*Sets background of the section element*/
+	section{
+		background-color : #FFFFFF;
+	}
+	
+	/*Styles the article content in white boxes with rounded top-left and bottom-right corners*/
+	article{
+		background-color : #f05a28;
+		border-top : 0;
+		padding : 1em;
+		border-radius : 3em 0 3em 0;
+		margin-bottom : 1em;
+	}
+	
+	/* Styles embeded video to center on page */
+	iframe{
+		width : 100%;
+	}
+	
+	/* Specifies the font size and bottom padding for the tables's caption */
+	caption{
+		font-size : 1em;
+		padding-bottom : 0.8em;
+	}
+	
+	/* Gives the tables a black, collapsed border with padding*/
+	table, th, td{
+		border : solid 0.1em #000000;
+		padding : 1em;
+		border-collapse : collapse;
+	}
+	
+	/* Sets table width and centers the table in the article element */
+	table{
+		width : 100%;
+		margin-right : auto;
+		margin-left : auto;
+	}
+	
+	/* Styles the form element with orange background and padding*/
+	form{
+		background-color : #f05a28;
+		padding : 1.2em;
+	}
+	
+	/* Tablet style for form label elements */
+	label{
+		float : left;
+		text-align : right;
+		font-size : 1.2em;
+		padding : 0 0.5em 0 0;
+	}
+	
+	/* Adds margin to the left of the form buttons */
+	.bttn{
+		margin-left : 8em;
+	}
+	
+	/* Styles the shirts img */
+	#shirts{
+		width : 30%;
+		padding-left : 12%;
+		padding-right : 15%;
+		margin-bottom : 1em;
+	}
+	
+	/* Styles the T-shirt img */
+	#T-shirt{
+		width : 25%;
+		padding-right : 12%;
+		margin-bottom : 1em;		
+	}
+	
+	/* Styles the RTB figure */
+	#RTB{
+		padding-bottom : 5%;
+	}
+	
+	/* Styles the RTB img */
+	#RTB img{
+		width : 25%;
+		padding-right : 5%;
+		margin-left : -2em;
+		margin-bottom : 2em;
+	}
+	
+		/* Styles the Dodgeball figure */
+	#Dodgeball{
+		padding-bottom : 5%;
+	}
+	
+	/* Styles the Dodgeball img */
+	#Dodgeball img{
+		width : 25%;
+		padding-right : 5%;
+		margin-left : -2em;
+		margin-bottom : 4em;
+	}
+	
+	/* Styles the MALogo img */
+	#MALogo{
+		width : 25%;
+		padding-left : 15%;
+		padding-right : 10%;
+		margin-bottom : 1em;
+	}
+	
+	/* Styles the MAWinner img */
+	#MAWinner{
+		width : 34%;
+		padding-right : 10%;
+		margin-bottom : 1em;
+	}
+}
+
+
+/* Desktops */
+@media screen and (min-width : 768px){
+	
+	/* Changes the width of te outerwrapper */
+	#outerwrapper{
+		width : 80%;
+	}
+
+	/*Re-styles the top margin for header-text*/
+	.header-text{
+		margin-top : -0.5em;
+	}
+	/* Re-styles the margin and padding of the list to display more compact and below the header */
+	nav ul{
+		margin : 0;
+		padding-left : 0.50%;
+		padding-right : 0.50%;
+		clear :left;
+	}
+	
+	/* Stlye removes the button-like format of the nav list items */
+	nav li{
+		background-color : #c1d8ef;
+		border-radius : 0;
+		margin-left : 0;
+		margin-right : 0;
+		padding : 0;
+		width : 25%;
+	}
+	
+	/* Style specifies the color, display, padding, and size nav links*/
+	nav li a{
+		color : black;
+		display : inline-block;
+		padding : 0.7em;
+		font-size : 1.25em;
+	}
+	
+	/* Styles color of the links when unvisited */
+	nav li a:link{
+		color : black;	
+	}
+	
+	/* Re-styles the color and style of the links when hovered over*/
+	nav li a:hover{
+		color : #f05a28;
+		font-style : italic;
+	}
+
+	/*Sets the background color of the section*/
+	section{
+		background-color : #f05a28;
+	}
+	
+	/*Sets the background color of the article*/
+	article{
+		background-color : #FFFFFF;
+	}
+	
+	/* Decreases the table width, centers it, and adds bottom padding */
+	table{
+		width : 80%;
+		margin-left : auto;
+		margin-right : auto;
+		margin-bottom : 1em;
+	}
+	
+	/* Re-styles the form with a white background and more padding */
+	form{
+		background-color : #FFFFFF;
+		padding : 2.5em;
+	}
+	
+	/* Style for socialMedia div */
+	#socialMedia{
+		width : 20%;
+		padding-left : 40%;
+	}
+	
+	/* Styles the socialMedia logos */
+	#socialMedia img{
+		width : 20%;
+		padding : 0.3em;
+	}
+
+	#shirts{
+		width : 30%;
+		padding-left : 10%;
+		padding-right : 21%;
+		margin-bottom : 1em;
+	}
+	
+	/* Styles the T-shirt img */
+	#T-shirt{
+		width : 25%;
+		padding-right : 10%;
+		margin-bottom : 1em;		
+	}
+	
+	/* Styles the RTB figure */
+	#RTB{
+		width : 90%;
+		padding-bottom : 8%;
+		margin-top: 2em;
+	}
+	
+	/* Styles the RTB img */
+	#RTB img{
+		width : 18%;
+		padding-right : 5%;
+		margin-left : -2em;
+		margin-top : -1em;
+		margin-bottom : 2em;
+	}
+	
+		/* Styles the RTB figure */
+	#Dodgeball{
+		width : 90%;
+		padding-bottom : 8%;
+		margin-top: 2em;
+	}
+	
+	/* Styles the RTB img */
+	#Dodgeball img{
+		width : 18%;
+		padding-right : 5%;
+		margin-left : -2em;
+		margin-top : -1em;
+		margin-bottom : 2em;
+	}
+	
+	/* Styles the MALogo img */
+	#MALogo{
+		width : 25%;
+		padding-left : 15%;
+		padding-right : 10%;
+		margin-bottom : 1em;
+	}
+	
+	/* Styles the MAWinner img */
+	#MAWinner{
+		width : 34%;
+		padding-right : 8%;
+		margin-bottom : 1em;
+	}
+}
+/* Fullscreen Desktops */
+@media screen and (min-width : 1425px){
+	
+	/* Re-sizes the Rinker Hall image to fit the display */
+	.RinkerHall{
+		width: 97%;
+	}
+}
