@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Jonathan Franck 11/12/2018-->
+
+<html lang="en">
+<head>
+	<title>Rinker Residence Hall</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/rinkerstyles.css">
+	<script src="scripts/rinkerFunctions.js"></script>
+</head>
+<body>
+	<div id="outerwrapper">
+	<header>
+		<h2 class="page-heading">Join Our Mailing List</h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href = "index.html">Home</a>&nbsp;</li>
+			<li><a href="events.html">Events</a>&nbsp;</li>
+			<li><a href="staff.html">Staff</a>&nbsp;</li>
+			<li><a href="hours.html">Hours</a>&nbsp;</li>
+		</ul>
+	</nav>
+	
+	<div id="banner" class="desktop">
+		<figure class="desktop">
+				<p><img src="images/RinkerHall.jpg" class="RinkerHall" alt="Rinker Residence Hall building"></p>
+		</figure>
+	</div>
+	
+	<div id = "main">
+		<section>
+			<h2>Please Fill Out Your Information</h2>
+			<form>
+				<label for="fName">First Name :</label>
+				<input type="text" name="fName" id="fName">
+				
+				<label for="lName">Last Name :</label>
+				<input type="text" name="lName" id="lName">
+				
+				<label for="email" > Email Address:</label>
+				<input type="email" name="email" id="email">
+				
+				<label for="status">I am :</label>
+				<select name="status" id="status">
+					<option value="unenrolled">A prospective student of PBA</option>
+					<option value="student">A student, but not a Rinker resident</option>
+					<option value="resident">A resident of Rinker Hall</option>
+				</select>
+				
+				<input type="submit" id="submit" value="Done" class="bttn" onclick="tyAlert()">
+				
+				<input type="reset" id="reset" value="Clear" class="bttn" onclick="clearConf()">
+				
+
+				
+			</form>
+		</section>
+		
+		<div class="audio">
+			<audio autoplay="autoplay" controls="controls">
+				<source src="media/What a Beautiful Sunset! Radio Mix - Angelwing.mp3" type="audio/mp3">
+				<p>Your browser does not support the audio element.</p>
+			</audio>
+		</div><!-- end of audio class -->
+		
+	</div><!--end main-->
+	
+	<footer>
+		<hr>
+		<p>Rinker Hall</p>
+		<p>As for the men here, we will serve the Lord</p>
+		<div id="socialMedia">
+			<p>Connect with us here:</p>
+			<p><a href="https://www.instagram.com/rinker_and_weyenberg/"><img src="images/GlyphLogo_May2016_Onlinev2/glyph-logo_May2016.png" alt="Instagram glyph logo"></a>
+			<a href="https://twitter.com/Rinker_and_Co"><img src="images/Twitter Social Icons/Twitter Social Icons/Twitter_SocialIcon_RoundedSquare/Twitter_Social_Icon_Rounded_Square_Color.png" alt="Twitter logo"></a></p>
+		</div><!-- end socialMedia -->
+	</footer>
+	
+	</div><!-- end outerwrapper -->
+</body>
+</html>
